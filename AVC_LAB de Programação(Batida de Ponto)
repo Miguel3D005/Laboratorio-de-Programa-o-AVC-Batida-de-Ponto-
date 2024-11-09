@@ -1,0 +1,33 @@
+    if lista:
+        print(f"A lista contém: {lista}")
+    else:
+        print("A lista está vazia.")
+    
+    print(f"A tupla contém: {tupla}")
+    
+    chave = 'idade'
+    if chave in dicionario:
+        print(f"A chave '{chave}' no dicionário tem o valor: {dicionario[chave]}")
+    else:
+        print(f"A chave '{chave}' não foi encontrada no dicionário.")
+    
+    if ativo:
+        print("O sistema está ativo.")
+    else:
+        print("O sistema está inativo.")
+    
+    lista.append("Novo item")
+    dicionario['status'] = 'Atualizado'
+    
+    return lista, dicionario
+
+# Exemplo de uso
+minha_lista = [1, 2, 3]
+minha_tupla = (10, 20, 30)
+meu_dicionario = {'nome': 'João', 'idade': 30}
+status_ativo = True
+
+nova_lista, novo_dicionario = processar_dados(minha_lista, minha_tupla, meu_dicionario, status_ativo)
+
+print(f"Nova lista: {nova_lista}")
+print(f"Novo dicionário: {novo_dicionario}")
